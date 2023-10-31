@@ -1,7 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
 a {
     text-decoration: none;
 }
 .icon{
-    width: 20px;
+    width: 30px;
     height: auto;
 }
