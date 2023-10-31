@@ -1,10 +1,104 @@
 *{
     margin: 0;
     padding: 0;
-    border: 1px solid;
     border-collapse: collapse;
 }
+body,html{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    overflow: auto;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+/*<!--- Header Content Styling--->*/
+.header{
+    width: 1480px;
+    display: flex;
+    flex-direction: row;
+    padding: 7px 40px 7px 40px;
+    gap: 350px;
+    background-color: #414A4C;
+    flex: 0 0 60px;
+}
+    /*<!!---Top Logo Styling--->*/
+#logoContainer{
+    width: fit-content;
+    height: fit-content;
+}
 
+
+#logo{
+
+    width: auto;
+    height: 56px;
+    margin-left: 15px;
+    cursor:pointer;
+    transition: all 1s ease;
+}
+
+
+#logo:hover{
+
+    transform: scale(3) translateY(40px);
+    background-color: #414A4C;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    content: url(./Images1/Logo3.png);
+
+}
+    /*<!!--- Menu Bar Styling--->*/
+.menuBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    gap: 20px;
+}
+
+.barBtn{
+    width: fit-content;
+}
+
+.barBtn > button{
+    width: 110px;
+    height:35px;
+    border-radius: 5px;
+    font-family: philosopherBold;
+    font-size: larger;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    opacity: 0.8;
+}
+
+.barBtn > button:hover{
+    transform: scale(1.2) ;
+    background-color: #FFDD43;
+    color: #262525;
+    opacity:1;
+}
+
+@font-face {
+    font-family: philosopherBold;
+    src: url(./Fonts/Philosopher-BoldItalic.ttf);
+}
+
+#logo2 {
+    height:40px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
 a {
     text-decoration: none;
 }
