@@ -13,6 +13,12 @@
         /*<!!--- Buttons Images Content Styling--->*/
 
     /*<!--- Layout3 Content Styling--->*/
+        /*<!!--- Motto Section Styling--->*/
+        /*<!!--- About Section Styling--->*/
+            /*<!!!--- Beliefs and Members Styling--->*/
+            /*<!!!--- Service Pictures Styling--->*/
+    
+    /*<!--- Footer Content Styling--->*/
 
 
 
@@ -349,7 +355,7 @@ a {
     
 
 }
-
+    /*<!!--- Motto Section Styling--->*/
 .motto{
     height: 200px;
 }
@@ -379,13 +385,16 @@ a {
 
 
 
-
+    /*<!!--- About Section Styling--->*/
 .about{
     padding-top: 80px;
     display: flex;
     height:500px;
 }
 
+
+
+        /*<!!!--- Beliefs and Members Styling--->*/
 .members_beliefs{
     display: flex;
     flex-direction: column;
@@ -424,6 +433,10 @@ a {
     font-size: 20px;
 }
 
+
+
+
+        /*<!!!--- Service Pictures Styling--->*/
 .servicePic{
     width: 800px;
     display: flex;
@@ -432,14 +445,15 @@ a {
 #service1{
     display: flex;
     flex-direction:column ;
-    gap: 20px;
+    gap: 5px;
     padding: 10px 0px 10px 20px;
 }
 
 .picService1{
     width: 370px;
     height: 200px;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     transition: all 0.2s ease-in;
 }
 
@@ -449,15 +463,16 @@ a {
 }
 
 #service2{
-    padding: 0px 0px 0px 20px;
+    padding: 0px 0px 15px 5px;
     display: flex;
     align-items: center;
 }
 
 .picService2{
-    height: 400px;
+    height: 405px;
     width: 400px;
-    border-radius: 10px;
+    border-top-right-radius:10px ;
+    border-bottom-right-radius:10px ;
     transition: all 0.2s ease-in;
 }
 
@@ -469,7 +484,7 @@ a {
 
 
 
-
+/*<!--- Footer Styling--->*/
 #footer{
     background: #414A4C;
 }
