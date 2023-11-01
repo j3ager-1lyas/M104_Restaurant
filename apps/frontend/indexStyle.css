@@ -1,3 +1,29 @@
+/* Index of Styles:
+    /*<!--- Header Content Styling--->*/
+        /*<!!---Top Logo Styling--->*/
+        /*<!!--- Menu Bar Styling--->*/
+        /*<!!--- Social Icons Styling--->*/
+
+    /*<!--- Layout1 Content Styling--->*/
+        /*<!!--- Slogan Content Styling--->*/
+        /*<!!--- Images Content Styling--->*/
+
+    /*<!--- Layout2 Content Styling--->*/
+        /*<!!--- Category Images Content Styling--->*/
+        /*<!!--- Buttons Images Content Styling--->*/
+
+    /*<!--- Layout3 Content Styling--->*/
+
+
+
+
+
+
+
+
+
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -18,6 +44,11 @@ body{
     background-color: aliceblue;
 }
 
+
+
+
+
+
 /*<!--- Header Content Styling--->*/
 .header{
     
@@ -32,12 +63,12 @@ body{
 
 
 
+
     /*<!!---Top Logo Styling--->*/
 #logoContainer{
     width: fit-content;
     height: fit-content;
 }
-
 
 #logo{
 
@@ -48,7 +79,6 @@ body{
     transition: all 1s ease;
 }
 
-
 #logo:hover{
 
     transform: scale(3) translateY(40px);
@@ -58,6 +88,9 @@ body{
     content: url(./Images1/Logo3.png);
 
 }
+
+
+
 
     /*<!!--- Menu Bar Styling--->*/
 .menuBar{
@@ -100,6 +133,10 @@ body{
     width: auto;
     border-radius: 10px;
 }
+
+
+
+
     /*<!!--- Social Icons Styling--->*/
 .socials{
     display: flex;
@@ -118,6 +155,10 @@ a {
 }
 
 
+
+
+
+
 /*<!--- Layout1 Content Styling--->*/
 
 #layout1{
@@ -130,6 +171,10 @@ a {
     background-color: #E9E9E9;
 
 }
+
+
+
+
     /*<!!--- Slogan Content Styling--->*/
 .homeSlogan{
     display: flex;
@@ -164,6 +209,10 @@ a {
     letter-spacing: 0.8px;
     font-size: 20px;
 }
+
+
+
+
     /*<!!--- Images Content Styling--->*/
 .homeImages{
 
@@ -193,6 +242,7 @@ a {
     z-index: 4;
     transform: scale(1.15);
 }
+
 #homeImg2{
     z-index: 3;
     transition: all 0.2s ease-in;
@@ -215,6 +265,11 @@ a {
     transform: scale(1.15);
 }
 
+
+
+
+
+
 /*<!--- Layout2 Content Styling--->*/
 
 #layout2{
@@ -226,6 +281,7 @@ a {
     justify-content: space-around;
     background: #262525;
 }
+
     /*<!!--- Category Images Content Styling--->*/
 .category{
     display: flex;
@@ -234,7 +290,6 @@ a {
     height: 310px;
     gap:20px;
 }
-
 
 .categoryImg{
     
@@ -255,8 +310,9 @@ a {
 }
 
 
-    /*<!!--- Buttons Images Content Styling--->*/
 
+
+    /*<!!--- Buttons Images Content Styling--->*/
 
 .checkButton {
     height: 40px;
@@ -269,6 +325,151 @@ a {
     transition: all 0.2s ease;
     cursor: pointer;
 }
+
 .checkButton:active{
     transform: scale(0.96);
+}
+
+
+
+
+
+/*<!---Layout3 Content Styling--->*/
+
+#layout3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    width: 1445px;
+    height: 700px;
+    padding: 20px 40px 20px 40px;
+    background: linear-gradient(180deg,#262526,#515151,#676666,#D4D3D3,#E9E9E9);
+    
+
+}
+
+.motto{
+    height: 200px;
+}
+
+#mottoText{
+
+    font-family: David;
+    font-weight: 500;
+    font-size:xxx-large;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 1.12px;
+    color: #d6ad28;
+    padding: 20px 20px 20px 50px;
+}
+
+#describtion{
+    padding: 15px 50px 20px 60px;
+    text-align: justify;
+    font-family: David;
+    color: rgb(250, 243, 230);
+    line-height: 25px;
+    letter-spacing: 0.8px;
+    font-size: 20px;
+
+}
+
+
+
+
+.about{
+    padding-top: 80px;
+    display: flex;
+    height:500px;
+}
+
+.members_beliefs{
+    display: flex;
+    flex-direction: column;
+    width:660px;
+}
+
+.members{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px 25px 0px;
+    width: 660px;
+    height:200px;
+}
+
+.memberImg{
+
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.belief{
+    padding: 10px;
+}
+
+#beliefText{
+    height: 100%;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    text-align: justify;
+    font-family: David;
+    color: black;
+    line-height: 25px;
+    letter-spacing: 0.8px;
+    font-size: 20px;
+}
+
+.servicePic{
+    width: 800px;
+    display: flex;
+}
+
+#service1{
+    display: flex;
+    flex-direction:column ;
+    gap: 20px;
+    padding: 10px 0px 10px 20px;
+}
+
+.picService1{
+    width: 370px;
+    height: 200px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in;
+}
+
+.picService1:active{
+    
+    transform: scale(1.5)  translateY(-50px);
+}
+
+#service2{
+    padding: 0px 0px 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.picService2{
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in;
+}
+
+.picService2:active{
+    
+    transform: scale(1.5) translateX(-150px) translateY(-50px);
+}
+
+
+
+
+
+#footer{
+    background: #414A4C;
 }
