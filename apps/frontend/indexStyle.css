@@ -40,7 +40,7 @@ body,html{
     margin:0;
     padding:0;
     width:100%;
-    height:100%;
+    
     overflow: auto;
 }
 
@@ -487,4 +487,55 @@ a {
 /*<!--- Footer Styling--->*/
 #footer{
     background: #414A4C;
+    width: 1445px;
+    height:300px;
+    display: flex;
+    flex-direction: row;
+    padding: 7px 40px 7px 40px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 1200px;
+    align-items: center;
+}
+
+#map{
+    border-radius: 5px;
+    height:260px;
+    width: auto;
+}
+
+ul{
+    list-style-type:"-  ";
+    text-align: justify;
+    font-family: David;
+    color: rgb(250, 243, 230);
+    line-height: 25px;
+    letter-spacing: 0.8px;
+    font-size: 15px;
+}
+
+ul> li> h2{
+    color:#e6c65c;
+    
+}
+.title{
+    list-style-type: none;
+}
+
+.bottomLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+}
+
+#logobottom{
+    width: 230px;
+    height: 230px;
 }
