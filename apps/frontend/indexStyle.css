@@ -3,6 +3,7 @@
     padding: 0;
     border-collapse: collapse;
 }
+
 body,html{
     margin:0;
     padding:0;
@@ -10,21 +11,27 @@ body,html{
     height:100%;
     overflow: auto;
 }
+
 body{
     display: flex;
     flex-direction: column;
     background-color: aliceblue;
 }
+
 /*<!--- Header Content Styling--->*/
 .header{
-    width: 1480px;
+    
+    width: 1445px;
     display: flex;
     flex-direction: row;
     padding: 7px 40px 7px 40px;
-    gap: 350px;
+    justify-content: space-between;
     background-color: #414A4C;
     flex: 0 0 60px;
 }
+
+
+
     /*<!!---Top Logo Styling--->*/
 #logoContainer{
     width: fit-content;
@@ -51,6 +58,7 @@ body{
     content: url(./Images1/Logo3.png);
 
 }
+
     /*<!!--- Menu Bar Styling--->*/
 .menuBar{
     display: flex;
@@ -92,17 +100,175 @@ body{
     width: auto;
     border-radius: 10px;
 }
-
+    /*<!!--- Social Icons Styling--->*/
 .socials{
     display: flex;
     flex-direction: row;
     gap: 15px;
     align-items: center;
 }
+
 a {
     text-decoration: none;
 }
+
 .icon{
     width: 30px;
     height: auto;
+}
+
+
+/*<!--- Layout1 Content Styling--->*/
+
+#layout1{
+
+    display: flex;
+    height: 590px;
+    width: 1485px;
+    padding: 20px;
+    gap:20px;
+    background-color: #E9E9E9;
+
+}
+    /*<!!--- Slogan Content Styling--->*/
+.homeSlogan{
+    display: flex;
+    width: 600px;
+    height: 590px ;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.homeSlogan>h2 {
+    font-family: David;
+    font-weight: 500;
+    font-size:xx-large;
+    line-height: 37px;
+    text-align: justify;
+    letter-spacing: 1.12px;
+    color: #967A1B;
+    padding: 20px 20px 0px 50px;
+
+}
+
+@font-face {
+    font-family: David;
+    src: url(./Fonts/Cardo-Regular.ttf);
+}
+.homeSlogan>p{
+
+    padding: 15px 50px 20px 60px;
+    text-align: justify;
+    line-height: 25px;
+    letter-spacing: 0.8px;
+    font-size: 20px;
+}
+    /*<!!--- Images Content Styling--->*/
+.homeImages{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 590px;
+    width: 900px;
+}
+
+.homeImage{
+    
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px gray;
+
+}
+
+#homeImg1{
+    z-index: 2;
+    translate: 70%;
+    transition: all 0.2s ease-in;
+}
+
+#homeImg1:hover{
+    z-index: 4;
+    transform: scale(1.15);
+}
+#homeImg2{
+    z-index: 3;
+    transition: all 0.2s ease-in;
+}
+
+#homeImg2:hover{
+    
+    transform: scale(1.15);
+}
+
+#homeImg3{
+    z-index: 1;
+    translate:-70%;
+    transition: all 0.2s ease-in;
+}
+
+#homeImg3:hover{
+    
+    z-index:3;
+    transform: scale(1.15);
+}
+
+/*<!--- Layout2 Content Styling--->*/
+
+#layout2{
+
+    display: flex;
+    height: 410px;
+    width: 1325px;
+    padding: 50px 100px 50px 100px;
+    justify-content: space-around;
+    background: #262525;
+}
+    /*<!!--- Category Images Content Styling--->*/
+.category{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 310px;
+    gap:20px;
+}
+
+
+.categoryImg{
+    
+    height: 250px;
+    border-radius: 5px;
+}
+
+.categoryPic{
+    box-shadow: 2px 3px 3px 3px rgba(5, 5, 5, 0.488);
+    width:250px;
+    height: 250px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+}
+
+.categoryPic:hover{
+    transform: scale(1.1);
+}
+
+
+    /*<!!--- Buttons Images Content Styling--->*/
+
+
+.checkButton {
+    height: 40px;
+    width: 250px;
+    font-size: larger;
+    font-family: David;
+    color: #262525;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px ;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.checkButton:active{
+    transform: scale(0.96);
 }
