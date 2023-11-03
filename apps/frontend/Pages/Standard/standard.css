@@ -15,6 +15,11 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+
+
+
+
 /*<!--- Header Content Styling--->*/
 .header{
     
@@ -151,6 +156,7 @@ a {
     width:75vw;
     margin: 150px 12vw 150px 12vw;
     border-radius: 15px;
+    min-width: 600px;
     background:linear-gradient(45deg,#262525,#515151,#676666,#939292,#262525,#515151,#676666,#939292,#262525,#515151,#676666,#939292);
     
 }
@@ -172,7 +178,7 @@ a {
     background: linear-gradient(45deg,#232526,#414345,#967A1B,#232526,#414345,#232526,#414345,#967A1B,#232526,#414345);
     border-radius:50px ;
     width: 1vw;
-    height:190vh;
+    height:100vh;
 }
 
 #leftGeo{margin-left: 5vw}
@@ -190,11 +196,14 @@ a {
 .content{
 
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50vw;
+    min-width: 400px;
+    justify-content: center;
+    align-items: flex-start;
     align-self: center;
-    gap: 6vw;
+    gap: 4vw;
     padding: 10vh 0px;
 }
 
@@ -212,11 +221,12 @@ a {
 
 .item{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 5vw;
+    gap: 2vw;
     background-color: #232526;
     border: 2px solid #967A1B;
-    padding: 2vw;
+    padding: 1vw;
     border-radius: 10%;
     transition: all 0.3s ease-in;
 }
@@ -240,7 +250,7 @@ a {
 }
 
 .item>.describtion{
-    width:30vw;
+    height:3vw;
     text-align: justify;
     font-size: 1.1rem;
     color: rgb(243, 240, 240);
