@@ -1,0 +1,224 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body,html{
+
+    width: 100vw;
+    height: 100vh;
+    overflow:auto;
+
+}
+body{ 
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+/*<!--- Header Content Styling--->*/
+.header{
+    
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    padding: 7px 5vw 7px 5vw;
+    justify-content: space-between;
+    background-color: #414A4C;
+    flex: 0 0 60px;
+    min-width: 700px;
+
+}
+
+
+
+
+    /*<!!---Top Logo Styling--->*/
+#logoContainer{
+        width: fit-content;
+        height: fit-content;
+}
+
+#logo{
+
+    width: auto;
+    height: 56px;
+    margin-left: 15px;
+    cursor:pointer;
+    transition: all 1s ease;
+}
+
+#logo:hover{
+
+    transform: scale(3) translateY(40px);
+    background-color: #414A4C;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    content: url(../../Images1/Logo3.png);
+
+}
+
+
+
+
+    /*<!!--- Menu Bar Styling--->*/
+.menuBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    gap: 20px;
+}
+
+.barBtn{
+
+    width: fit-content;
+
+}
+
+.barBtn > button{
+    width: 110px;
+    height:35px;
+    border-radius: 5px;
+    font-family: philosopherBold;
+    font-size: larger;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    opacity: 0.8;
+}
+
+.barBtn > button:hover{
+
+    transform: scale(1.2) ;
+    background-color: #FFDD43;
+    color: #262525;
+    opacity:1;
+
+}
+
+@font-face {
+    font-family: philosopherBold;
+    src: url(../../Fonts/Philosopher-BoldItalic.ttf);
+}
+
+
+
+    /*<!!--- Social Icons Styling--->*/
+.socials{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.icon{
+    width: 30px;
+    height: auto;
+}
+
+
+
+
+/*<!--- Layout Styling ---!>*/
+
+.layout {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:80vw;
+    
+    padding: 5vw 10vw 5vw 10vw;
+    background: radial-gradient(#262525,#515151);
+}
+
+.form{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    gap: 2vh;
+    padding: 3vw 4vw 3vw 4vw;
+    background: radial-gradient(#cbcaa5,#334d50);
+    border-radius: 50px;
+}
+
+@font-face {
+    font-family: David;
+    src: url(./Fonts/Cardo-Regular.ttf);
+}
+
+#title{
+
+    font-family: David;
+    font-weight: 500;
+    font-size:xxx-large;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 1.12px;
+    color: #d6ad28;
+    padding: 20px 20px 20px 50px;
+
+
+}
+
+Input{
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+
+    border-radius: 20px;
+    height:35px;
+    margin: 5px;
+    background-color: beige;
+    padding: 2px 10px 2px 10px;
+}
+
+.submit{
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+
+    border-radius: 20px;
+    height:35px;
+    width: 100px;
+    margin: 5px;
+    background-color: goldenrod;
+    padding: 2px 10px 2px 10px;
+    font-family: David;
+    font-weight: 500;
+    letter-spacing: 1.12px;
+    font-size: large;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+}
+
+.submit:active{
+
+    transform: scale(0.8);
+
+}
+#messageInput{
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+
+    border-radius: 20px;
+    
+    margin: 5px;
+    background-color: beige;
+    padding: 10px 10px 10px 10px;
+}
+
